@@ -1,0 +1,122 @@
+#id-1 {
+    font-size: 1rem;
+    color-interpolation-filters: linearRGB;
+}
+.title {
+    /* basic */
+    color: red;
+}
+.title-1.title-2 {
+    /* chọn ra 2 thẻ có tên là titlt-1 và title-2 */
+    color: green;
+}
+.box .title {
+    font-size: 1.5em;
+     /* khi có dấu cách thì selector bên phải là con của bên trái */
+    color: blue;
+}
+
+/* * {
+    css tất cả các thẻ :D
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+p {
+    /* css tất cả các thẻ p */
+    color: rgb(128, 32, 88);
+}
+
+h2.nd-1 {
+    /* css class nd-1 trong thẻ h2 */
+    font-size: 30px;
+    color: yellow;
+}
+/*  */
+pre, h3, .group-1 {
+    /* nhóm chung thẻ pre, h3 , class(group-1) khi có điểm chung cần css */
+    font-size: 33px;
+    color: wheat;
+}
+pre {
+    /* vẫn css điểm riêng đc :D  */
+    text-decoration: underline; 
+    /* fact: underline là gạch chân :v */
+}
+.btn-1 {
+    /* css btn-1 trong các thẻ p chứa class btn-1 :v*/
+    color: violet;
+}
+/*  */
+.box> .tructiep, .box> .kotructiep{
+    /* css thẻ con trực tiếp là tructiep ,
+    thẻ kotructiep ko đc css vì ko phải thẻ con trực tiếp :v */
+    font-size: 33px;
+    color: yellowgreen;
+}
+.tit + .tit {
+    /* chọn các class đứng đằng sau class tit , phải liền kề */
+    color: pink;
+}
+.tle ~ .tle {
+    font-size: 34px;
+    color: cadetblue;
+}
+/* preority */
+.scss {
+    color: aqua;
+
+}
+#htmlfive {
+    font-size : 33px !important;
+    color: blue ;
+    font-style:italic;
+    text-align: center;
+}
+/* Bg , bg-img */
+.khoi {
+    width: 300px;
+    height: 300px;
+    background-color: aqua;
+    background-image: url(https://catscanman.net/wp-content/uploads/2023/02/meme-meo-cuoi.jpg);
+    background-repeat: no-repeat;
+    background-size:100% 100% ;
+}
+.div123{
+    background-color: blue;
+    background-image: url(https://sieupet.com/sites/default/files/cho-ngao-husky_1.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 20vh;
+    width: 70vw;
+}
+.dvi-2 {
+    font-size: 30px;
+}
+.dvi-3 {
+    font-size: 50%;
+}
+.box-123 {
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+    border-left: 10px salmon;
+    margin-right: 10px;
+    padding-left: 20px;;
+}
+p.serif {
+    font-family: "Times New Roman", Times, serif;
+ }
+ p.sansserif {
+    font-family: Helvetica, Arial, sans-serif;
+ }
+ p.monospace {
+    font-family: "Courier New", Courier, monospace;
+ }
+ p.cursive {
+    font-family: Florence, cursive;
+ }
+ p.fantasy {
+    font-family:'Courier New', Courier, monospace;
+ }

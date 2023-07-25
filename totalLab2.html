@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="total.css">
+    <title>CSS</title>
+</head>
+<body>
+    <!-- CSS Selectors-->
+    <!-- 1.Basic Css -->
+    <p id="id-1">World Cup</p>
+
+    <h2 class="title">Lorem ipsum dolor sit amet.</h2> 
+    <!-- 2.class.class (chọn ra cả 2 thẻ có tên) -->
+    <h2 class="title-1">Lorem ipsum dolor sit amet.</h2>
+    <h2 class="title-2">Lorem ipsum dolor sit amet.</h2>
+    <!-- 3.Class con của class -->
+    <!-- title title1 (title1 là con của title :v) *nằm bên trong là đc-->
+    <div class="box">
+        <h2 class="title">Lorem ipsum dolor sit amet.</h2>
+    </div>
+    <!--4. dấu "*" -->
+    <h2>Dấu "*" là selector tất cả các thẻ trong trang nếu muốn reset css</h2>
+    <!--5. element -->
+    <!-- Css element (các thẻ :v) -->
+    <b> <p>Lorem, ipsum dolor.</p>
+    <p>VTC ACADEMY</p>
+    <p>Bài tập Lab2</p> </b>
+    <!--6. element.class -->
+    <!-- chọn ra 1 thẻ muốn css khi có các class trùng tên nhau :v -->
+    <h2 class="nd-1">VTCA</h2>
+    <h3 class="nd-1">VTCA</h3>
+    <p class="nd-1">VTCA</p>
+    <!--7. group element -->
+    <!-- nhóm các element để css -->
+    <pre>Lorem ipsum dolor sit amet consectetur.</pre>
+    <h3>Lorem ipsum, dolor sit amet consectetur adipisicing.</h3>
+    <h3 class="group-1">Lab2</h3>
+    
+    <p class="bt btn-1">Chicken</p>
+    <p class="btn btn-1">Duck</p>
+    <p class="b btn-1">Bird</p>
+
+    <!-- 8.element element -> tương tự như cái số 3 :v -->
+    <!--  -->
+    <!-- element >  element  -->
+        <!-- thẻ bên phải là con trực tiếp của thẻ bên trái mới css đc *phải là con trực tiếp -->
+        <div class="box">
+            <p class="tructiep">Đây là con trực tiếp :D</p> 
+                <div class="box-01">
+                    <p class="kotructiep">Không phải con trực tiếp</p>
+                </div>
+        </div>
+
+    <!-- element + element -->
+    <!-- chọn ra element liền kề đứng sau element *anh em liền kề đằng sau -->
+    <h1 class="tit">123</h1
+    <h1 class="tit">123</h1>
+    <h1 class="tit">123</h1>
+    <h2>hù</h2>
+    <h1 class="tit">123</h1>
+    <!-- element ~ element -->
+    <!-- chọn ra element đứng sau nó , 
+        *cứ đứng đằng sau nó là anh emm chứ ko cần phải liền kề :v-->
+        <h2 class="tle">234</h2>
+        <h2 class="tle">234</h2>
+        <p>gà</p>
+        <h2 class="tle">234</h2>
+        <h2 class="tle">234</h2>+
+        <h2 class="tle">234</h2>
+    <!--  -->
+    <!-- Priority -->
+    <!-- 1.Internal , external -->
+    <!-- In-ex bằng nhau ~~ -->
+        <p class="scss" id="htmlfive">Florentino</p>
+    <!--  -->
+    <!-- Backgroud and bg-img -->
+    <div class="khoi">
+        <h2 align="center" class="">This is Backgroud</h2>
+    </div>
+    <!-- Đơn vị đo -->
+    <div class="div123">
+        <p class="dvi-1">Đơn vị 1 </p>
+    </div>
+    <p class="dvi-2">Đơn vị 2</p>
+    <div class="box-123">
+        <p class="dvi-3">Đơn vị 3</p>
+    </div>
+    <!-- div - span -->
+    <div><span>Lorem ipsum dolor sit.</span> <span>Lorem ipsum dolor sit amet consectetur.</span></div>
+    <!-- . border, margin, padding -->
+    <!-- font-family -->
+    <p class="serif">
+        This is a paragraph shown in serif font.
+     </p>
+     <p class="sansserif">
+        This is a paragraph shown in sans-serif font.
+     </p> 
+     <p class="monospace">
+        This is a paragraph shown in monospace font.
+     </p> 
+     <p class="cursive">
+        This is a paragraph shown in cursive font.
+     </p> 
+     <p class="fantasy">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium reiciendis veniam pariatur.
+     </p>
+</body>
+</html>
